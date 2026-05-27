@@ -5,8 +5,6 @@ WIP toolkit based on Hacks/Hackers Newsroom AI Lab handbook
 
 ### 1. Open in dev container
 
-**Codespaces:** Click **Code → Codespaces → Create codespace on main**.
-
 **Local:** Clone the repo, open in VS Code, and accept the prompt to **Reopen in Container** (or run `Dev Containers: Reopen in Container` from the command palette).
 
 The container will install all dependencies automatically on first build.
