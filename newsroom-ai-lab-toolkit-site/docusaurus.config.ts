@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Newsroom AI Lab Toolkit',
-  tagline: '📰',
+  tagline: 'A guide for building actually useful stuff',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -107,11 +107,6 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Newsroom Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
