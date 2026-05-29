@@ -2,7 +2,7 @@
 name: problem-statement-feedback
 description: Use this skill to review and give feedback on draft problem statements from a design thinking workshop. Trigger whenever someone shares a problem statement in the format "[User] needs [need] so that [goal]" and wants coaching feedback, or when someone asks for help evaluating, refining, or improving a problem statement. Also trigger when someone mentions "problem statement review", "problem statement feedback", "design thinking problem statement", or when a facilitator asks for help giving feedback to workshop participants on problem statements.
 metadata:
-  version: 0.0.1
+  version: 0.0.1-draft
   author: "Hacks/Hackers Newsroom AI Lab"
 ---
 

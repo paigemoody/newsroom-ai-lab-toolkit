@@ -38,3 +38,9 @@ Triggers when someone shares a problem statement in the format `[User] needs [ne
 Each directory in this `skills/` directory is a skill and contains a SKILL.md.
 
 To add a skill, create a new folder under `skills/` and open a pull request. Packaged `.skill` files are generated and attached to releases automatically (see `.github/workflows/package-skills.yml`).
+
+Skills should follow the [Agent Skills specification](https://agentskills.io/specification).
+
+All skills should set a [semver compliant](https://semver.org/#semantic-versioning-specification-semver)
+version number in `metadata.version`. Use `draft` as a pre-release label in place of common `alpha` and
+`beta` labels. Use numeric dot suffixes for revisions of a draft, such as `1.2.1-draft.1`.
