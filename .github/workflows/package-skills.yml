@@ -1,0 +1,30 @@
+name: Package and attach skills on release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  package-skills:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package each skill folder as a .skill file
+        run: |
+          mkdir -p dist
+          for skill_dir in skills/*/; do
+            skill_name=$(basename "$skill_dir")
+            if [ -f "$skill_dir/SKILL.md" ]; then
+              zip -j "dist/${skill_name}.skill" "$skill_dir/SKILL.md"
+              echo "Packaged: ${skill_name}.skill"
+            fi
+          done
+
+      - name: Upload .skill files to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.skill
