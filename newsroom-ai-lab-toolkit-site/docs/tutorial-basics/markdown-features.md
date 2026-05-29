@@ -53,7 +53,7 @@ Let's see how to [Create a page](/create-a-page).
 Let's see how to [Create a page](./create-a-page.mdx).
 ```
 
-**Result:** Let's see how to [Create a page](./create-a-page.mdx).
+**Result:** Let's see how to [Create a page](./create-a-page.md).
 
 ## Images
 
